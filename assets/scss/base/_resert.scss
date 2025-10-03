@@ -1,0 +1,113 @@
+
+
+body {
+    color: #333;
+    background-color: #fff;
+    font-family: 'DINPro-Regular', sans-serif;
+    font-size: 18px;
+    padding-top: 120px;
+}
+body{
+    padding-top: 100px;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    color: $body-bg;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.parent {
+    width:100%;
+}
+article, aside, footer, header, hgroup, nav, section, figure, figcaption {
+    display: block;
+    margin: 0;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+
+}
+p{
+    color: #8692A6;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.33;
+    letter-spacing: -0.5px;
+
+}
+
+ol, ul {
+    list-style: none;
+} 
+
+
+h1,h2,h3,h4,h5,h6 {
+overflow-wrap:break-word;
+}
+.content-wrapper {
+    padding: 60px 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+img {
+    width:100%;
+    height:auto;
+}
+
+.fa {
+    font-size:50px;
+}
+.courses-title, .section-title {
+    color:#5fd7d9;
+}
+.categories-title {
+    color:#10262b;
+}
+
+.header-text, .Creative {
+    font-size: 36px;
+    color:$body-bg;
+
+}
+
+.highlight {
+    color:$craydel-orange;
+}
+.section-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-left {
+    align-items: left;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {a
+
+
+     p {
+        font-size:15px;
+     }
+}

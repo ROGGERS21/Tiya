@@ -1,0 +1,115 @@
+footer {
+    width:100%;
+
+     .section-footer {
+        display: grid;
+        grid-template-columns: auto 400px 200px;
+
+        .footer-icon {
+          width: 80px;
+        }
+
+        .c {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+               .social-icons {       
+                 display:flex;
+                flex-direction: row;
+                gap:7px 10px;
+
+                  i {
+                     font-size: 30px;
+                     color: black;
+                  }
+
+                  .instagram-icon, .twitter-icon, .icon-twitter {
+
+                     border-radius: 56px;
+                     background: yellow;
+                     padding: 10px;
+
+
+
+                      
+
+                  }
+               
+               }
+
+         }
+
+         .b {
+
+             h5 {
+               padding-bottom: 20px;
+             }
+
+         }
+
+        
+     }
+}
+
+
+@media screen and (max-width: 1500px) {
+
+
+    footer {
+      padding: 0px;
+      
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  footer {
+     width: 100%;
+     padding: 0px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 690px) {
+
+
+   footer .section-footer {
+
+
+      grid-template-columns: 400px 200px;
+
+   }
+
+}
+
+
+@media screen and (max-width: 600px) {
+ 
+
+   footer .wrapper {
+      padding-inline: 0.8rem;
+   }
+
+   footer .section-footer {
+      grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+   footer .section-footer .footer-icon {
+      width: 60px;
+   }
+   p {
+      padding-bottom: 10px;
+   }
+
+
+}

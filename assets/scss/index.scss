@@ -1,0 +1,30 @@
+@import "utilities/variables";
+
+
+
+
+//base//
+@import "base/resert";
+@import "base/general";
+// @import "base/icon";
+
+//layouts//
+@import "layouts/header";
+
+
+// components//
+@import "layouts/footer";
+
+//components//
+@import "components/bg-image";
+@import "components/history";
+@import "components/membership";
+@import "components/upcoming";
+@import "components/location";
+@import "components/bg-golf";
+@import "components/mobile_nav";
+
+// @import "components/instructor";
+// @import "components/testimonials";
+// @import "components/education-online";
+// @import "components/end";

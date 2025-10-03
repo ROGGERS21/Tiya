@@ -1,0 +1,176 @@
+#bgimage {
+
+    
+    background-image: url("/assets/images/nature.jpg");
+    background-image: url("https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    // padding-top: 120px;
+    position: relative;
+    margin-top: 5.8em;
+    height:100vh;
+
+
+
+
+       .link-fields {
+        display: flex;
+        flex-direction: row;
+        max-width: 400px;
+        gap:1.3em;
+        margin-top: 10px 0px;
+
+            .story {
+                background-color: $craydel-orange;
+                // font-size: 16px;
+                line-height: 0px;
+                padding: 14px 25px;
+               text-align: center;
+               text-decoration: none;
+               color:$body-bg;
+            //    margin-top: 2em;
+                                   border-radius: 12px;
+
+            }
+
+            .member-btn {
+                    border-radius: 25px;
+                    padding: 14px 21px;
+                    color: $body-bg;
+                     border-radius: 3px solid $success;
+                    //   margin-top: 2em;
+                      background-color: #343a40;
+
+                                      line-height: 0px;
+                                                    //   font-size: 16px;
+
+
+                    }
+
+                   
+
+            
+       }
+}
+
+#wrapper {
+   
+    display: grid;
+      grid-template-columns: 480px auto;
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+    #wrapper {
+        grid-template-columns: auto auto;
+    }
+
+    #bgimage {
+      height: auto;
+      margin-top: -1.2em;
+      width: 100%;
+     
+    }
+
+}
+
+
+@media screen and (max-width: 810px) {
+
+   .wrapper {
+    padding-inline: 1.1rem;
+   }
+
+}
+
+@media screen and (max-width: 790px) {
+
+  #bgimage {
+    height: 60vh;
+    margin-top: -0.7em;
+  }
+
+
+}
+
+@media screen and (max-width: 650px) {
+
+   #bgimage {
+    margin-top: -0.9em;
+   }
+
+}
+@media screen and (max-width: 600px) {
+
+  #wrapper {
+    // padding-inline: 10px;
+    grid-template-columns: auto;
+    gap:10px;
+  }
+  #bgimage {
+    margin-top: -1.0em;
+    height: 80vh;
+  }
+
+}
+
+
+@media screen and (max-width: 580px) {
+
+  .wrapper {
+    padding-inline: 0rem;
+  }
+
+  
+
+  #location .direction {
+    padding: 5px;
+  }
+
+  footer .section-footer .c {
+    align-items: left;
+  }
+   #bgimage {
+    // margin-top: 2.0em;
+    height: 80vh;
+  }
+
+
+}
+
+@media screen and (max-width: 580px) {
+
+  
+   #bgimage {
+    margin-top: -1.0em;
+   }
+
+
+}
+
+@media screen and (max-width: 490px) {
+
+
+  #bgimage {
+    margin-top: -1.3em;
+    height: 65vh;
+  }
+
+
+}
+@media screen and (max-width: 400px) {
+
+
+  #bgimage {
+    margin-top: -1.5em;
+    height: 65vh;
+  }
+
+
+}

@@ -1,0 +1,202 @@
+#bg-golf {
+    background-image: url(/assets/images/golf-club-player.webp);
+        // background-image: url("/assets/images/golf-club-player.webp");
+
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+        .newsletter {
+     
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            left:0px;
+            max-width: 500px;
+            background-color: #d1d5db4d;
+            padding: 30px;
+            border-radius: 20px;
+
+            h3 {
+                font-size: 30px;
+            }
+
+            .main-form {
+                display: flex;
+                // flex-direction: column;
+
+                 .text {
+                     display: flex;
+                     flex-direction: row;
+
+                        input[type=text] .fm {
+                           width: 50%;
+                        }
+                
+               }
+
+               #forms {
+                display: flex;
+
+                 i {
+                    padding-top: 4px;
+                    font-size: 30px;
+                 }
+                
+               }
+               .icon {
+                font-size:30px;
+                padding-top: 5px;
+                // background: #;
+                
+               }
+
+               .email {
+                max-width: 200px;
+                padding: 10px 20px;
+               }
+               .btn-subscribe {
+                background: $subscribe;
+               }
+
+            }
+
+           
+        }
+
+
+}
+
+
+@media screen and (max-width: 1030px) {
+   #bg-golf {
+    width: 100%;
+    height: 43vh;
+   }
+
+
+}
+
+@media screen and (max-width: 790px) {
+
+  #bg-golf {
+    width:100%;
+     height: 50vh;
+
+  }
+   #bg-golf .newsletter {
+        max-width: 400px;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+
+     #bg-golf .newsletter {
+        max-width: 380px;
+        padding: 10px;               
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 590px) {
+
+
+    #bg-golf {
+      width:100%;
+    }
+     #bg-golf .newsletter {
+        max-width: 350px;
+        padding: 5px;               
+
+    }
+
+   .newsletter p {
+      padding-bottom: 0px;
+    }
+
+    #bg-golf .newsletter h3 {
+      font-size: clamp(12px, 4vw, 30px);
+    }
+
+
+}
+
+
+@media screen and (max-width: 490px) {
+
+
+  #bg-golf {
+      width:100%;
+      height:40vh;
+    }
+
+   #bg-golf .newsletter  {
+    width: 90%;        
+    max-width: 330px
+   }
+
+   #bg-golf .newsletter .main-form #forms i {
+    font-size: 20px;
+   }
+
+   #bg-golf .newsletter .main-form .email {
+       max-width: 150px;
+        padding: 10px 15px;
+   }
+
+
+}
+
+@media screen and (max-width: 390px) {
+
+    #bg-golf {
+      width:100%;
+      height:30vh;
+    }
+
+    #bg-golf .newsletter  {
+      width: 90%;        
+       max-width: 300px
+    }
+
+    #bg-golf .newsletter .main-form .email {
+      max-width:120px;
+    }
+
+
+}
+
+@media screen and (max-width: 290px) { 
+      #bg-golf .newsletter .main-form .email {
+
+        max-width: 108px;
+        padding: 10px;
+
+      }
+      
+
+}
+
+@media screen and (max-width: 280px) { 
+
+
+  #bg-golf .newsletter .main-form .email {
+
+        max-width: 90px;
+        padding: 5px;
+
+      }
+
+      #bg-golf .newsletter .main-form #forms i {
+        font-size: 15px;
+      }
+
+
+}

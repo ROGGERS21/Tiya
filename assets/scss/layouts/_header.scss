@@ -1,0 +1,408 @@
+
+header {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    padding: 0 30px;
+    background-color: $dark-grey;
+    z-index: 1000;
+        .header-wrapper {
+             max-width: 1440px;
+             margin: 0 auto;
+             display: flex;
+             flex-direction: row;
+             width: 100%;
+             justify-content: space-between;
+        }
+
+        .logo {
+            display: block;
+        }
+        .col {
+         display: flex;
+         vertical-align: middle;
+               .left{
+                    width: 200px;                  
+                    .logo-image {
+                       display:flex;
+                       flex-direction: row;
+
+                       span {
+                        padding: 10px 3px;
+                       }                                   
+                  
+                       
+                  }
+                 
+                }
+
+                .right {
+                    text-align: right;
+                    font-size: 18px;
+
+                    #main_nav {
+                        font-size: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        position: relative;
+
+                        a {
+                            position: relative;
+                            margin-right: 60px;
+                            font-size: 16px;
+                            vertical-align: middle;
+                            display: inline-block;
+                            line-height: 80px;
+                            
+
+                        }
+
+                    }
+                }
+        }           
+        
+    
+    
+}
+
+
+#tiya-image {
+                width: 90px;
+              } 
+.col.left{
+    width: 200px;
+}
+.logo-image {
+        display:flex;
+        flex-direction: row;
+
+}
+
+.logo-image span {
+    padding: 10px 3px;
+
+}
+
+#main_nav a:hover::after, #main_nav a:focus::after, #main_nav a:active::after {
+  max-width: 100%;
+}
+
+.dropdown-toggle {
+    padding: 0px;
+}
+#main_nav ul.dropdown  {
+    display: none;
+    position: absolute;
+    top:90%;
+    margin-top:5px;
+    right:0px;
+    // background-color: yellow;
+}
+
+#main_nav ul.dropdown li {
+    list-style-type: none;
+    border-bottom: 1px solid #000000;
+    height: 75px;
+}
+#main_nav ul.dropdown li a {
+    text-decoration: none;
+    color:orangered;
+    font-weight: 400;
+    line-height: 75px;
+    text-align: center;
+    height:75px;
+    display: block;
+    padding: 0em 1em;
+    display: none;
+
+}
+
+
+
+#main_nav {
+                        font-size: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        position: relative;
+}
+
+#main_nav a {
+                            position: relative;
+                            margin-right: 60px;
+                            font-size: 16px;
+                            vertical-align: middle;
+                            display: inline-block;
+                            line-height: 80px;
+}
+                            
+#main_nav a:hover {
+            color:red;                           
+                            
+}
+
+#main_nav a {
+  position: relative; /* anchor is the positioning parent */
+  text-decoration: none; /* remove default underline */
+}
+
+#main_nav a::after {
+  content: "";                 /* required for ::after to show */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;                 /* thickness of the line */
+  width: 0;                    /* start hidden */
+  background: currentColor;    /* use text color for the line */
+  transition: width 0.3s ease; /* smooth animation */
+}
+
+#main_nav a:hover::after,
+#main_nav a:focus::after,
+#main_nav a:active::after {
+  width: 100%; /* expand on hover */
+}
+
+#main_nav ul.dropdown:hover .dropdown li a {
+    display: block;
+}
+
+#main_nav .dropdown-toggle:hover .dropdown {
+    display: block;
+}
+
+.active {
+    color: $craydel-yellow;
+}
+
+.member {
+    border-radius: 25px;
+    width: 120px;
+    padding: 10px 20px;
+   color: $body-bg;
+    border-radius: 3px solid $success;
+    margin-top: 2em;background-color: #343a40;
+}
+
+
+/*  */
+.navigation-hamburger {
+    display: none;
+    vertical-align: middle;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    background-color: #00303C;
+    color: #fff;
+    margin-left: 12px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.navigation-hamburger .bar-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    width: 20px;
+    /* -webkit-filter: blur(0); */
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
+    transform: translateX(-50%) translateY(-50%) translateZ(0);
+    -webkit-transition: margin .2s ease, opacity .3s ease, -webkit-transform .2s ease .8s;
+    transition: margin .2s ease, opacity .3s ease, -webkit-transform .2s ease .8s;
+    transition: margin .2s ease, transform .2s ease .8s, opacity .3s ease;
+    transition: margin .2s ease, transform .2s ease .8s, opacity .3s ease, -webkit-transform .2s ease .8s;
+}
+.navigation-hamburger .bar {
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: 4px auto;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.navigation-hamburger.-close .bar, .navigation-hamburger.-close .cross-line {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.navigation-hamburger.-close .bar1 {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+    -webkit-animation-name: jiggleClose;
+    animation-name: jiggleClose;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+.navigation-hamburger.-close .bar2 {
+    -webkit-transform: translateX(25px);
+    transform: translateX(25px);
+    -webkit-animation-name: jiggleClose;
+    animation-name: jiggleClose;
+    -webkit-animation-delay: .65s;
+    animation-delay: .65s;
+}
+.navigation-hamburger.-close .bar3 {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+    -webkit-animation-name: jiggleClose;
+    animation-name: jiggleClose;
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+.navigation-hamburger .cross-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    margin-left: 2px;
+    /* -webkit-filter: blur(0); */
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
+    transform: translateX(-50%) translateY(-50%) translateZ(0);
+    -webkit-transition: margin .2s ease, opacity .3s ease, -webkit-transform .2s ease 1s;
+    transition: margin .2s ease, opacity .3s ease, -webkit-transform .2s ease 1s;
+    transition: margin .2s ease, transform .2s ease 1s, opacity .3s ease;
+    transition: margin .2s ease, transform .2s ease 1s, opacity .3s ease, -webkit-transform .2s ease 1s;
+}
+.navigation-hamburger .cross-wrap .cross-line {
+    height: 100%;
+    width: 3px;
+    background: #7cc142;
+    position: absolute;
+    left: 9px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.navigation-hamburger .cross-wrap .cross-line1 {
+    -webkit-transform: translateY(-30px) translateX(30px) rotate(45deg);
+    transform: translateY(-30px) translateX(30px) rotate(45deg);
+}
+.navigation-hamburger.-close .cross-line1 {
+    -webkit-transform: translateY(0) translateX(0) rotate(-45deg);
+    transform: translateY(0) translateX(0) rotate(-45deg);
+    -webkit-animation-name: crossLeftClose;
+    animation-name: crossLeftClose;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+.navigation-hamburger .cross-wrap .cross-line2 {
+    -webkit-transform: translateY(-30px) translateX(-30px) rotate(-45deg);
+    transform: translateY(-30px) translateX(-30px) rotate(-45deg);
+}
+.navigation-hamburger.-close .cross-line2 {
+    -webkit-transform: translateY(0) translateX(0) rotate(45deg);
+    transform: translateY(0) translateX(0) rotate(45deg);
+    -webkit-animation-name: crossRightClose;
+    animation-name: crossRightClose;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+
+@media screen and (max-width: 1500px) {
+
+
+    #man-nav a {
+        line-height: 100px;
+        margin-right: 50px;
+    }
+
+    .section-title {
+        font-size: 52px;
+    }
+
+    .content-wrapper {
+        padding: 50px 0px;
+    }  
+
+
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .content-wrapper {
+        padding: 40px 0px;
+    }
+    .section-title {
+        font-size: 34px;
+    }
+     header .col.left {
+        width: 180px;
+     }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+
+     #main_nav {
+        display: none;
+    }
+    .wrapper {
+        padding-inline: 1.82rem;
+    }  
+
+
+    .location, .bg-golf {
+        width: 100%;
+    }
+    
+
+    #tiya-image {
+        width: 65px;
+    }
+
+}
+
+
+@media screen and (max-width: 890px) {
+   .wrapper {
+    padding-inline: 1.5rem;
+   }
+
+   header {
+    padding: 0px 20px;
+   }
+   #bg-golf {
+    height: 60vh;  /* reduce height */
+  }
+
+}
+
+@media screen and (max-width: 790px) {
+
+    #tiya-image { 
+      height: 60px;
+    }
+    .logo-image span {
+        padding: 0px;
+ 
+    }
+
+     header {
+        margin-top: 0px;
+     }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    span {
+        display: none;
+    } 
+
+
+}

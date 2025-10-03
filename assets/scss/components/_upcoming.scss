@@ -1,0 +1,201 @@
+#upcoming {
+
+      background-color: $member-color;
+
+
+    .events-section {
+        display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 150px 300px auto;
+        gap:10px;
+        padding: 20px;
+       
+          .event-date {
+            width: 150px;
+            background: orange;
+            text-align: center;
+            height: 100px;
+            border-radius: 15px;
+            .caption {
+                font-size: 35px;
+            }
+          }
+
+
+        .event-content {
+            padding: 10px;
+             .venue {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                .button-event {
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   .event-btn {
+                    padding: 15px 25px;
+                    border-radius: 10px;
+                    background-color: $light-red;
+                   }
+                }
+             }
+        }
+    
+    }
+
+   
+
+}
+
+.wrapper {
+  .events-section:nth-of-type(2) {
+    background-color: $body-bg;
+  }
+
+}
+
+
+@media screen and (max-width: 890px) {
+
+  #upcoming .events-section .event-content .venue {
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 810px) {
+
+   .content-wrapper {
+    padding: 30px 0px;
+   }
+
+   .wrapper {
+    padding-inline: 1rem;
+   }
+   .text-left {
+      font-size: clamp(14px, 4vw, 36px);
+
+   }
+}
+
+
+@media screen and (max-width: 790px) {
+
+  #upcoming .events-section {
+    margin-top: 2em;
+  }
+
+  #upcoming .events-section .event-content {
+    padding: 5px;
+  }
+
+  #upcoming .events-section .event-content .venue .button-event .event-btn {
+    padding: 10px 15px;
+  }
+  #bgimage, .header-text {
+    font-size: clamp(14px, 4vw, 36px);
+
+  }
+
+  .header-text, .Creative {
+        font-size: clamp(14px, 4vw, 36px);
+
+
+  }
+
+ 
+
+  .section-b {
+     position: relative;
+     width: 100%;
+     max-width: 500px; /* your limit */
+     aspect-ratio: 16 / 9; /* keeps the video proportional */
+     
+   }
+
+     .section-b iframe {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+        height: 100%;
+
+   
+      }
+  
+}
+
+
+@media screen and (max-width: 690px) {
+
+    #upcoming .events-section {
+      grid-template-columns: 150px 150px auto;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+        #upcoming .events-section {
+           grid-template-columns: auto;
+        }   
+
+}
+
+
+@media screen and (max-width: 580px) {
+     #upcoming .events-section {
+       margin-top: 1em;
+       padding: 10px;
+       gap:0px;
+     }
+
+     #upcoming .wrapper {
+      padding-inline: 0.88rem;
+     }
+     #upcoming .events-section .event-date {
+      width: 100px;
+      height: 90px;
+     }
+     #upcoming .events-section .event-date .caption {
+      font-size: clamp(13px, 4vw, 35px);
+     }
+
+} 
+
+@media screen and (max-width: 480px) {
+
+      #upcoming .events-section .event-date {
+        width: 100px;
+        height: 69px;
+        margin-bottom: 5px;
+
+      }
+
+      #upcoming .events-section .event-date .caption {
+
+        font-size: 24px;
+      }
+
+      #upcoming .events-section {
+        padding: 0px;
+      }
+
+      #location .direction {
+        padding: 4px;
+      }
+
+
+
+}
+
+
+
+
